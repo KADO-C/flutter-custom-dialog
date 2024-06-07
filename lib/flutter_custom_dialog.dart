@@ -124,17 +124,16 @@ class YYDialog {
                   dismiss();
                 }
               },
-              child: Padding(
-                padding: buttonPadding1,
-                child: Text(
-                  text1 ?? "",
-                  style: TextStyle(
-                    color: color1 ?? null,
-                    fontSize: fontSize1 ?? null,
+              style: TextButton.styleFrom(
+                  foregroundColor: color1 ?? Colors.black,
+                  padding: buttonPadding1,
+                  textStyle: TextStyle(
+                    fontSize: fontSize1 ?? 18.0,
                     fontWeight: fontWeight1,
                     fontFamily: fontFamily1,
-                  ),
-                ),
+                  )),
+              child: Text(
+                text1 ?? "",
               ),
             ),
             Visibility(
@@ -148,17 +147,17 @@ class YYDialog {
                   dismiss();
                 }
               },
-              child: Padding(
+              style: TextButton.styleFrom(
+                foregroundColor: color2 ?? Colors.black,
                 padding: buttonPadding2,
-                child: Text(
-                  text2 ?? "",
-                  style: TextStyle(
-                    color: color2 ?? Colors.black,
-                    fontSize: fontSize2 ?? 14.0,
-                    fontWeight: fontWeight2,
-                    fontFamily: fontFamily2,
-                  ),
+                textStyle: TextStyle(
+                  fontSize: fontSize2 ?? 14.0,
+                  fontWeight: fontWeight2,
+                  fontFamily: fontFamily2,
                 ),
+              ),
+              child: Text(
+                text2 ?? "",
               ),
             )
           ],
