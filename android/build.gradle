@@ -22,6 +22,9 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+
+    namespace = "yy.inc.flutter_custom_dialog"
+
     compileSdkVersion 28
 
     defaultConfig {
